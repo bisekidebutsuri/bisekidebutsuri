@@ -3,78 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>微積で高校物理～大学受験に向けて～｜オンライン面談</title>
+  <title>微積で高校物理～大学受験に向けて～</title>
   <style>
     body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f0f4f8;
-      color: #222;
-      text-align: center;
+      font-family: "Noto Sans JP", sans-serif;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
+      background: #f5f8fb;
+      color: #333;
+      line-height: 1.8;
     }
-    .container {
-      max-width: 500px;
-      margin: auto;
-      background: white;
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    /* 🔹 バナー部分 */
+    .banner {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
     }
-    h1 {
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
-    p {
-      line-height: 1.6;
-    }
-    .price {
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin: 1rem 0;
-    }
-    .footer {
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #666;
-    }
-    .pay-button {
-      background-color: #5c6bc0;
+
+    /* 🔹 ヘッダー */
+    header {
+      background: #1e3a8a;
       color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      cursor: pointer;
+      text-align: center;
+      padding: 40px 20px;
     }
-    .pay-button:hover {
-      background-color: #3949ab;
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* 🔹 セクション全般 */
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-left: 5px solid #1e3a8a;
+      padding-left: 10px;
+      color: #1e3a8a;
+      margin-bottom: 15px;
+    }
+
+    /* 🔹 YouTube動画埋め込み */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-top: 20px;
+    }
+    .video-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* 🔹 ボタン */
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    /* 🔹 フッター */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>微積で高校物理～大学受験に向けて～</h1>
-    <p>オンライン面談（60分）のお申し込みはこちらから。<br>
-       高校物理の疑問や勉強法をTeamsで直接相談できます。</p>
-    
-    <p class="price">料金：5,000円（税込）</p>
 
-    <!-- Pay.jp チェックアウトボタン -->
-    <script src="https://checkout.pay.jp/" class="payjp-button"
-      data-key="pk_test_ここにあなたの公開鍵を入れる"
-      data-text="決済に進む"
-      data-submit-text="支払う"
-      data-name="オンライン物理面談"
-      data-description="微積で高校物理～大学受験に向けて～ オンライン面談（60分）"
-      data-amount="2000"
-      data-currency="jpy"
-      data-after="https://www.youtube.com/@bisekidebutsuri">
-    </script>
-
-    <div class="footer">
-      © 2025 微積で高校物理～大学受験に向けて～ / Powered by Pay.jp
-    </div>
+  <!-- 🔹 トップバナー -->
+  <div class="banner">
+    <img src="banner.jpg" alt="微積で高校物理 バナー">
   </div>
+
+  <!-- 🔹 サイトタイトル -->
+  <header>
+    <h1>微積で高校物理～大学受験に向けて～</h1>
+    <p>微積で物理を、もっとわかりやすく。</p>
+  </header>
+
+  <!-- 🔹 YouTubeチャンネル -->
+  <section>
+    <h2>🎥 YouTubeチャンネル</h2>
+    <p>
+      「微積で高校物理～大学受験に向けて～」では、<br>
+      微積を使って物理を本質的に理解できる授業動画を配信しています。
+    </p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=bisekidebutsuri" allowfullscreen></iframe>
+    </div>
+    <p style="text-align:center; margin-top:20px;">
+      <a class="button" href="https://www.youtube.com/@bisekidebutsuri" target="_blank">チャンネルを見る</a>
+    </p>
+  </section>
+
+  <!-- 🔹 オンライン面談 -->
+  <section>
+    <h2>💬 オンライン個別面談</h2>
+    <p>
+      1対1で、微積を使った高校物理の理解を深めるセッションを行います。<br>
+      - 60分：5,000円（税込）<br>
+      - <strong>Microsoft Teams</strong> にて実施
+    </p>
+    <p style="text-align:center; margin-top:20px;">
+      <a class="button" href="#">💳 決済ページ（準備中）</a>
+    </p>
+  </section>
+
+  <!-- 🔹 お問い合わせ -->
+  <section>
+    <h2>📩 お問い合わせ</h2>
+    <p>
+      ご質問・講座のご相談などは、以下のフォームまたはX（旧Twitter）のDMからご連絡ください。
+    </p>
+    <p style="text-align:center;">
+      <a class="button" href="https://forms.gle/" target="_blank">Googleフォーム（仮）</a>
+    </p>
+  </section>
+
+  <!-- 🔹 フッター -->
+  <footer>
+    © 2025 微積で高校物理～大学受験に向けて～ All rights reserved.
+  </footer>
+
 </body>
 </html>
