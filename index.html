@@ -14,23 +14,27 @@
       line-height: 1.8;
     }
 
-    /* 🔹 バナー */
+    /* 🔹 バナー上下トリミング */
     .banner {
       width: 100%;
-      height: 200px;        /* スマホ用の高さ */
-      overflow: hidden;     /* はみ出した部分を非表示 */
+      height: 250px;          /* スマホ用高さ */
+      overflow: hidden;       /* はみ出した部分を非表示 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .banner img {
       width: 100%;
       height: auto;
-      object-fit: cover;    /* 中央を基準に拡大・切り取り */
+      object-fit: cover;      
+      object-position: center 30%; /* 上下調整: 上から30%を中央に */
       display: block;
     }
 
     /* PCでは高さを大きく */
     @media (min-width: 768px) {
       .banner {
-        height: 350px;      /* PC用の高さ */
+        height: 350px;        /* PC用高さ */
       }
     }
 
