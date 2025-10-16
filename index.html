@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>オンライン物理面談 - たくみ先生</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #222;
+      text-align: center;
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>微積で高校物理　オンライン面談</h1>
+    <p>高校物理の疑問やわからないことをオンライン面談で解決していきます。<br>
+    Teamsにて1回60分程度のセッションです。</p>
+    
+    <p class="price">料金：5,000円（税込）</p>
+
+    <!-- Pay.jp チェックアウトボタン -->
+    <script src="https://checkout.pay.jp/" class="payjp-button"
+      data-key="pk_test_ここにあなたの公開鍵を入れる"
+      data-text="決済に進む"
+      data-submit-text="支払う"
+      data-name="オンライン物理面談"
+      data-description="オンライン面談（60分）"
+      data-amount="5,000"
+      data-currency="jpy"
+      data-after="https://www.youtube.com/@あなたのチャンネルIDまたは感謝ページURL">
+    </script>
+
+    <div class="footer">
+      © 2025 bisekidebutsuri / Powered by Pay.jp
+    </div>
+  </div>
+</body>
+</html>
