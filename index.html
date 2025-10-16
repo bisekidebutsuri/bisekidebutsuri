@@ -14,12 +14,7 @@
       line-height: 1.8;
     }
 
-    /* 🔹 バナー部分 */
-    .banner {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
+    /* 🔹 バナー */
     .banner img {
       width: 100%;
       height: auto;
@@ -31,21 +26,21 @@
       background: #1e3a8a;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px 20px;
     }
     header h1 {
       margin: 0;
       font-size: 1.8rem;
     }
     header p {
-      margin-top: 10px;
+      margin-top: 8px;
       font-size: 1rem;
       opacity: 0.9;
     }
 
-    /* 🔹 セクション全般 */
+    /* 🔹 セクション */
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       background: white;
       border-radius: 12px;
@@ -97,6 +92,18 @@
       color: #666;
       margin-top: 40px;
     }
+
+    /* 🔹 レスポンシブ */
+    @media (min-width: 768px) {
+      section {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .video-container, .info-box {
+        flex: 1;
+      }
+    }
   </style>
 </head>
 
@@ -104,7 +111,7 @@
 
   <!-- 🔹 トップバナー -->
   <div class="banner">
-    <img src="banner.jpg" alt="微積で高校物理 バナー">
+    <img src="https://github.com/bisekidebutsuri/bisekidebutsuri/blob/main/%E5%BE%AE%E7%A9%8D%E3%81%A7%20%E9%AB%98%E6%A0%A1%E7%89%A9%E7%90%86%E3%83%90%E3%83%8A%E3%83%BC.png?raw=true" alt="微積で高校物理 バナー">
   </div>
 
   <!-- 🔹 サイトタイトル -->
@@ -115,17 +122,19 @@
 
   <!-- 🔹 YouTubeチャンネル -->
   <section>
-    <h2>🎥 YouTubeチャンネル</h2>
-    <p>
-      「微積で高校物理～大学受験に向けて～」では、<br>
-      微積を使って物理を本質的に理解できる授業動画を配信しています。
-    </p>
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=bisekidebutsuri" allowfullscreen></iframe>
     </div>
-    <p style="text-align:center; margin-top:20px;">
-      <a class="button" href="https://www.youtube.com/@bisekidebutsuri" target="_blank">チャンネルを見る</a>
-    </p>
+    <div class="info-box">
+      <h2>🎥 YouTubeチャンネル</h2>
+      <p>
+        「微積で高校物理～大学受験に向けて～」では、<br>
+        微積を使って物理を本質的に理解できる授業動画を配信しています。
+      </p>
+      <p style="text-align:center; margin-top:20px;">
+        <a class="button" href="https://www.youtube.com/@bisekidebutsuri" target="_blank">チャンネルを見る</a>
+      </p>
+    </div>
   </section>
 
   <!-- 🔹 オンライン面談 -->
