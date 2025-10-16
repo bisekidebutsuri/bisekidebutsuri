@@ -16,9 +16,18 @@
 
     /* 🔹 バナー */
     .banner img {
-      width: 100%;
-      height: auto;
+      width: 100%;          /* 横幅100% */
+      height: auto;         /* 縦横比維持 */
+      max-height: 300px;    /* 最大高さ300px */
+      object-fit: cover;    /* 中央基準で表示 */
       display: block;
+    }
+
+    /* PCでは大きめ */
+    @media (min-width: 768px) {
+      .banner img {
+        max-height: 400px;
+      }
     }
 
     /* 🔹 ヘッダー */
@@ -93,9 +102,9 @@
       margin-top: 40px;
     }
 
-    /* 🔹 レスポンシブ */
+    /* 🔹 レスポンシブ：PCでは横並び */
     @media (min-width: 768px) {
-      section {
+      section.video-section {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -121,7 +130,7 @@
   </header>
 
   <!-- 🔹 YouTubeチャンネル -->
-  <section>
+  <section class="video-section">
     <div class="video-container">
       <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=bisekidebutsuri" allowfullscreen></iframe>
     </div>
